@@ -30,7 +30,7 @@ RUN mkdir /opt/xml && mkdir /opt/notes && \
 RUN pip3  install Django requests xmltodict && \
     cd /opt/ && django-admin startproject nmapdashboard && cd /opt/nmapdashboard && \
     git clone https://github.com/netwrkspider/skynet.git nmapreport && \
-    cd nmapreport && git checkout master
+    cd nmapreport 
 
 RUN cp /opt/nmapdashboard/nmapreport/docker/settings.py /opt/nmapdashboard/nmapdashboard/
 RUN cp /opt/nmapdashboard/nmapreport/docker/urls.py /opt/nmapdashboard/nmapdashboard/
