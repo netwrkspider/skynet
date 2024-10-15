@@ -18,7 +18,7 @@
 
 FROM ubuntu:latest
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages \
     python3 python3-pip curl wget git wkhtmltopdf libssl-dev vim nmap tzdata
