@@ -16,7 +16,7 @@
 #
 # Now you can point your browser to http://localhost:8000
 
-FROM ubuntu:18.04.4
+FROM ubuntu:18.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
